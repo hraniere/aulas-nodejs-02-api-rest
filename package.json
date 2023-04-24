@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">= 18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
@@ -18,7 +21,7 @@
     "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "knex": "^2.4.2",
-    "sqlite3": "^5.1.6",
+    "pg": "^8.10.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -30,6 +33,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
+    "sqlite3": "^5.1.6",
     "supertest": "^6.3.3",
     "tsup": "^6.7.0",
     "tsx": "^3.12.6",
