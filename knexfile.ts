@@ -1,3 +1,3 @@
-import { knexConfig } from './src/database.js'
+import { knexConfig } from './src/database'
 
 export default knexConfig
